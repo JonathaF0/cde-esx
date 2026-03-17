@@ -101,18 +101,6 @@ exports['cdecad-sync-esx']:GetSyncedCivilianId(identifier)
 exports['cdecad-sync-esx']:ForceSync(source)
 ```
 
-## Key Differences from QBCore Version
-
-| Feature | QBCore | ESX |
-|---------|--------|-----|
-| Player ID | `citizenid` | `identifier` (license:xxx) |
-| Character Data | `charinfo` JSON | `users` table columns |
-| Gender | `0`/`1` (number) | `'m'`/`'f'` (string) |
-| Vehicle Table | `player_vehicles` | `owned_vehicles` |
-| Vehicle Data | `mods` JSON | `vehicle` JSON (properties) |
-| Player Object | `QBCore.Functions.GetPlayer(src)` | `ESX.GetPlayerFromId(src)` |
-| Player Load Event | `QBCore:Server:OnPlayerLoaded` | `esx:playerLoaded` |
-
 ## Troubleshooting
 
 ### Characters not syncing
